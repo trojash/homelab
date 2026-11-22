@@ -53,34 +53,23 @@ Entorno de virtualización y simulación de ataque y defensa de alto rendimiento
             └──────────┘ └──────────┘ └──────────────┘
 
 
+## Infraestructura Principal
 
-🖥️ Infraestructura Principal
+| Máquina Virtual | Rol en el Laboratorio | SO Base | Hardware Dedicado | Plataformas Instaladas |
+| :--- | :--- | :--- | :--- | :--- |
+| **`OPNsense-Firewall`** | Gateway de Seguridad y Enrutamiento | FreeBSD | 1 GB RAM / 1 CPU | Dnsmasq DHCP |
+| **`Kali-Manual`** | Emulación de Ataques Adversarios | Debian | 2 GB RAM / 1 CPU | Frameworks de ataque |
+| **`SOC-PLATFORMS`** | Centro de Sensores (Sensor Hub) | Ubuntu | 5 GB RAM / 2 CPUs | Zeek, Wazuh Agent |
+| **`Wazuh-Manager`** | Motor de Análisis de Logs y SIEM | Ubuntu | 4 GB RAM / 2 CPUs | Wazuh Dashboard |
+| **`WindowsServer-Victim`** | Objetivo Vulnerable (Blue Team) | WinServer | 4 GB RAM / 2 CPUs | Sysmon, Wazuh Agent, Apps Objetivo ej.: OWASP JuiceShop |
+| **`Rocky9.8 - Red Hat`** | Objetivo Vulnerable (Blue Team) | LinuxServer | 2 GB RAM / 2 CPUs | Auditd, Wazuh Agent |
+| **`Digital Forensic - Ubuntu Desktop`** | Análisis Forense Digital | LinuxDesktop | 8 GB RAM / 2 CPUs | Wazuh Agent, Autopsy, Volatility3, YARA, The Sleuth Kit |
 
+## Plataformas de Análisis de Malware
 
-Máquina Virtual	Rol en el Laboratorio	SO Base	Hardware Dedicado	Plataformas Instaladas
-OPNsense-Firewall
-	Gateway de Seguridad y Enrutamiento	FreeBSD	1 GB RAM / 1 CPU	Dnsmasq DHCP
-Kali-Manual
-	Emulación de Ataques (Adversary Emulation)	Debian	2 GB RAM / 1 CPU	Frameworks de ataque
-SOC-PLATFORMS
-	Centro de Sensores (Sensor Hub)	Ubuntu	5 GB RAM / 2 CPUs	Zeek, Wazuh Agent, Docker Apps
-Wazuh-Manager
-	Motor de Análisis de Logs y SIEM	Ubuntu	4 GB RAM / 2 CPUs	Wazuh Dashboard
-WindowsServer-Victim
-	Objetivo Vulnerable (Blue Team)	Windows Server	4 GB RAM / 2 CPUs	Sysmon, Wazuh Agent, Apps Objetivo (ej. OWASP Juice Shop)
-Rocky9.8 - Red Hat
-	Objetivo Vulnerable (Blue Team)	Linux Server	2 GB RAM / 2 CPUs	Auditd, Wazuh Agent
-Digital Forensic
-	Estación de Análisis Forense Digital	Ubuntu Desktop	8 GB RAM / 2 CPUs	Wazuh Agent, Autopsy, Volatility3, YARA, The Sleuth Kit
-
-
-🧪 Plataformas de Análisis de Malware
-
-
-Máquina Virtual	Rol en el Laboratorio	SO Base	Hardware Dedicado	Plataformas Instaladas
-REMNux
-	Ingeniería Inversa y Análisis de Malware	Ubuntu 24.04 LTS (Noble Numbat)	2 GB RAM / 2 CPUs	Simulación de Red, Triaje y Forense
-FLARE VM
-	Detonación e Ingeniería Inversa en Windows	Dentro de Windows 11 Desktop	6 GB RAM / 2 CPUs	Detonación y Depuración en Wind
+| Máquina Virtual | Rol en el Laboratorio | SO Base | Hardware Dedicado | Plataformas Instaladas |
+| :--- | :--- | :--- | :--- | :--- |
+| **`REMNux`** | Ingeniería Inversa y Análisis de Software Malicioso | Ubuntu 24.04 LTS (Noble Numbat) | 2 GB RAM / 2 CPUs | Simulaciones de Red, Triaje y Forense |
+| **`FLARE VM`** | Detonación e Ingeniería Inversa en Windows | Dentro de Windows 11 Desktop | 6 GB RAM / 2 CPUs | Detonación y Depuración en Windows |
 
 
