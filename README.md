@@ -69,7 +69,7 @@ Entorno de virtualización y simulación de ataque y defensa de alto rendimiento
 
 | Máquina Virtual | Rol en el Laboratorio | SO Base | Hardware Dedicado | Plataformas Instaladas |
 | :--- | :--- | :--- | :--- | :--- |
-| **`REMNux`** | Ingeniería Inversa y Análisis de Software Malicioso | Ubuntu 24.04 LTS (Noble Numbat) | 2 GB RAM / 2 CPUs | Simulaciones de Red, Triaje y Forense |
+| **`REMNux`** | Ingeniería Inversa y Análisis de Software Malicioso | Ubuntu 24.04 LTS (Noble Numbat) | 2 GB RAM / 2 CPUs | Simulación de Red, Triaje y Forense |
 | **`FLARE VM`** | Detonación e Ingeniería Inversa en Windows | Dentro de Windows 11 Desktop | 6 GB RAM / 2 CPUs | Detonación y Depuración en Windows |
 
 
